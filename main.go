@@ -13,5 +13,6 @@ func main() {
 	//base.ExampleArrays()                 // 2.8 Массивы
 	//base.ExampleIfElseSwitch()           // 2.9 Условные конструкции
 	//base.ExampleLoops()                  // 2.10 Циклы
-	base.ExampleFunctionsParameters() // 2.11 Функции и их параметры
+	//base.ExampleFunctionsParameters()    // 2.11 Функции и их параметры
+	base.ExampleReturnResultFunction() // 2.12 Возвращение результата из функции
 }
