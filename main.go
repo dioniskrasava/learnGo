@@ -1,9 +1,12 @@
 package main
 
-import base "learnExample/conspect"
+import (
+	networkprogramming "learnExample/conspect/metanit/9_network_programming"
+)
 
 func main() {
 	// https://metanit.com/go/tutorial/
+
 	//base.ExampleVar()                    // 2.2 Переменные
 	//base.ExampleTypes()                  // 2.3 Типы данных
 	//base.ExampleConst()                  // 2.4 Константы
@@ -15,5 +18,8 @@ func main() {
 	//base.ExampleLoops()                  // 2.10 Циклы
 	//base.ExampleFunctionsParameters()    // 2.11 Функции и их параметры
 	//base.ExampleReturnResultFunction()   // 2.12 Возвращение результата из функции
-	base.ExampleTypeFunction() // 2.13 Тип функции
+	//base.ExampleTypeFunction()           // 2.13 Тип функции
+
+	//networkprogramming.ExampleNet()                     // 9.1 Сетевое программирование
+	networkprogramming.ExampleServerConnectionProcess() // 9.2 Сервер. Обработка подключений
 }
