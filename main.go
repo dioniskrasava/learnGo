@@ -1,8 +1,6 @@
 package main
 
-import (
-	networkprogramming "learnExample/conspect/metanit/9_network_programming"
-)
+import base "learnExample/conspect/metanit/2_base"
 
 func main() {
 	// https://metanit.com/go/tutorial/
@@ -19,7 +17,11 @@ func main() {
 	//base.ExampleFunctionsParameters()    // 2.11 Функции и их параметры
 	//base.ExampleReturnResultFunction()   // 2.12 Возвращение результата из функции
 	//base.ExampleTypeFunction()           // 2.13 Тип функции
+	//base.ExampleAnonymFunction()         // 2.14 Анонимные функции
+	//base.ExampleRecursion()              // 2.15 Рекурсивные функции
+	//base.ExampleDefetPanic()             // 2.16 Defer и panic
+	base.ExampleSlices() // 2.17 Срезы
 
 	//networkprogramming.ExampleNet()                     // 9.1 Сетевое программирование
-	networkprogramming.ExampleServerConnectionProcess() // 9.2 Сервер. Обработка подключений
+	//networkprogramming.ExampleServerConnectionProcess() // 9.2 Сервер. Обработка подключений
 }
