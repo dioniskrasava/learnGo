@@ -14,5 +14,6 @@ func main() {
 	//base.ExampleIfElseSwitch()           // 2.9 Условные конструкции
 	//base.ExampleLoops()                  // 2.10 Циклы
 	//base.ExampleFunctionsParameters()    // 2.11 Функции и их параметры
-	base.ExampleReturnResultFunction() // 2.12 Возвращение результата из функции
+	//base.ExampleReturnResultFunction()   // 2.12 Возвращение результата из функции
+	base.ExampleTypeFunction() // 2.13 Тип функции
 }
