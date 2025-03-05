@@ -1,6 +1,8 @@
 package main
 
-import base "learnExample/conspect/metanit/2_base"
+import (
+	points "learnExample/conspect/metanit/3_points"
+)
 
 func main() {
 	// https://metanit.com/go/tutorial/
@@ -20,7 +22,9 @@ func main() {
 	//base.ExampleAnonymFunction()         // 2.14 Анонимные функции
 	//base.ExampleRecursion()              // 2.15 Рекурсивные функции
 	//base.ExampleDefetPanic()             // 2.16 Defer и panic
-	base.ExampleSlices() // 2.17 Срезы
+	//base.ExampleSlices()                 // 2.17 Срезы
+	//base.ExampleMap()                    // 2.18 Отображения (карты)
+	points.ExamplePoints() // 3.1 Что такое указатели
 
 	//networkprogramming.ExampleNet()                     // 9.1 Сетевое программирование
 	//networkprogramming.ExampleServerConnectionProcess() // 9.2 Сервер. Обработка подключений

@@ -162,5 +162,7 @@ func example5() {
 //
 //	------------------------ ПРИМЕР -----------------------
 func line(name string) {
+	fmt.Println()
 	fmt.Println("------------------", name, "------------------")
+	fmt.Println()
 }

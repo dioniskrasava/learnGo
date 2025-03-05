@@ -122,7 +122,7 @@ func ExampleTypes() {
 	// специальные символы строк
 	//
 	//
-	fmt.Println("\n") // новая строка
+	//fmt.Println("\n") // новая строка
 	fmt.Println("\r") // возврат каретки
 	fmt.Println("\t") // табуляция
 	fmt.Println("\"") // экранирование
