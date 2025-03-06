@@ -84,12 +84,23 @@ func ExampleNestedStructures() {
 
 	{
 		/* // ОШИБКА
+
 		type node struct {
 			value int
 			next  node
 		}
 		*/
 
+		/* // ТАК ПРАВИЛЬНО !
+
+		type node struct {
+			value int
+			next  *node
+		}
+
+		*/
+
+		line("Рекурсия в структурах")
 		example1()
 	}
 
@@ -103,6 +114,8 @@ func ExampleNestedStructures() {
 //                                                        //
 ////////////////////////////////////////////////////////////
 
+// Вообще суть этого примера в том, что есть объект который содержит в себе
+// какое-то значение и ссылку на следующий объект в списке
 func example1() {
 	first := node{value: 4}
 	second := node{value: 5}
@@ -112,10 +125,17 @@ func example1() {
 	second.next = &third
 
 	var current *node = &first
-	for current != nil {
+
+	// можно вывести ТАК :
+
+	/*for current != nil {
 		fmt.Println(current.value)
 		current = current.next
-	}
+	}*/
+
+	// а можно вывести ТАК :
+
+	printNodeValue(current)
 }
 
 type node struct {
