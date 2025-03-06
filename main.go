@@ -27,7 +27,8 @@ func main() {
 	//points.ExamplePoints()               // 3.1 Что такое указатели
 	//points.ExamplePointsFunctions()      // 3.2 Указатели и функции
 	//types_ex.ExampleTypesAliases()       // 4.1 Именованные типы и псевдонимы
-	types_ex.ExampleStructures() // 4.2 Структуры
+	//types_ex.ExampleStructures()         // 4.2 Структуры
+	types_ex.ExampleNestedStructures() // 4.2 Вложенные структуры
 
 	//networkprogramming.ExampleNet()                     // 9.1 Сетевое программирование
 	//networkprogramming.ExampleServerConnectionProcess() // 9.2 Сервер. Обработка подключений
