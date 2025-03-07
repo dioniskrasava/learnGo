@@ -33,8 +33,49 @@ func (a Aircraft) move() {
 }
 
 func ExampleIntroInterfaces() {
+
+	// создаем переменные интерфейса
+	// передавая им объекты структур
 	var tesla Vehicle = Car{}
 	var boing Vehicle = Aircraft{}
+
 	tesla.move()
 	boing.move()
 }
+
+////////////////////////////////////////////////////////////
+//                                                        //
+//         П Р И М Е Р   К О Н К Р Е Т Н Е Е              //
+//                                                        //
+//                                                        //
+//             того, зачем нужны интерфейсы               //
+//                                                        //
+////////////////////////////////////////////////////////////
+
+/*
+// БЫЛО
+func driveCar(c Car) {
+	c.move()
+}
+func driveAircraft(a Aircraft) {
+	a.move()
+}
+
+// вызовы в коде :
+
+driveCar(tesla)
+driveAircraft(boing)
+
+*/
+///////////////////////////////////////////////////////////////
+/*
+// СТАЛО
+func drive(vehicle Vehicle) {
+	vehicle.move()
+}
+
+// вызовы в коде :
+
+drive(tesla)
+drive(boing)
+*/
